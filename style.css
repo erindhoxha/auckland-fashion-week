@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'GT America';
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color:rgb(235, 235, 235);
+  position:relative;
+  background-color: #181818;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23000' fill-opacity='0.995'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.sidebar {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:-100%;
+  background:#000000;
+  z-index:2;
+  padding:48px;
+  overflow:hidden;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%233a3a3a' fill-opacity='0.1'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.sidebar ul li a {
+  color:white;
+  font-size:80px;
+  font-weight:300;
+  text-transform:uppercase;
+  text-decoration: none;
+}
+.sidebar ul li a:focus {
+  outline:none;
+}
+
+.sidebar ul li {
+  margin-bottom:24px;
+}
+ul {
+  list-style: none;
+}
+
+/* NAVBAR
+=========================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.navbar > div {
+  padding: 0 30px;
+  font-size: 20px;
+}
+
+.navbar .menu {
+  margin-right: auto;
+}
+.menu ion-icon {
+  width:28px;
+  height:28px;
+  cursor:pointer;
+}
+.menu ion-icon:hover {
+  transition:0.2s ease-in-out;
+  transform:scale(1.1);
+}
+
+.close ion-icon {
+  width:28px;
+  height:28px;
+  cursor:pointer;
+}
+.close ion-icon:hover {
+  transition:0.2s ease-in-out;
+  transform:scale(1.1);
+}
+
+
+.navbar .lang {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+/* SOCIAL MEDIA
+=========================== */
+.media ul {
+  position: absolute;
+  bottom: 250px;
+  left: -140px;
+  transform: rotate(-90deg);
+}
+
+.media ul li {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 0 30px;
+}
+.media ul li a {
+  color:#797979;
+  text-decoration:none;
+}
+
+
+/* TEXT
+=========================== */
+.text {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  transform: rotate(-90deg);
+}
+
+.text h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: -10px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  height: 97px;
+  width: 700px;
+  
+}
+.text h1 .hidetext {
+  position: absolute;
+}
+
+.text h2 {
+  position: absolute;
+  top: 40px;
+  left: -100%;
+  color: #565656;
+  opacity:0.5;
+  z-index: -1;
+  font-size: 150px;
+  font-weight: 900;
+  letter-spacing: -10px;
+  text-transform: uppercase;
+  box-shadow:0px 0px 12px rgb(0 0 0 / 10%);
+  font-family:"Inter";
+  color:transparent;
+  -webkit-text-stroke: #363636;
+  -webkit-text-stroke-width: 2px;
+  white-space:nowrap;
+}
+
+.text-design{
+  transform: rotate(90deg);
+  width: 100%;
+  font-size: 150px;
+  opacity:0.5;
+  font-weight: 900;
+  letter-spacing: -10px;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 12px rgb(0 0 0 / 10%);
+  font-family: "Inter";
+  color: transparent;
+  -webkit-text-stroke: #363636;
+  -webkit-text-stroke-width: 2px;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  right: -47%;
+  z-index: 9;
+}
+
+
+.text h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+}
+.text h3 .hidetext {
+  position: absolute;
+}
+
+.text p {
+  width: 200px;
+  font-size: 12px;
+  margin-top: 30px;
+  font-weight: 500;
+
+  position: relative;
+  overflow: hidden;
+  height: 17px;
+  opacity:0.3;
+}
+.text p .hidetext {
+  position: absolute;
+}
+
+
+/* SPONSOR
+=========================== */
+.sponsor {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  text-align: center;
+}
+
+.sponsor img {
+  width: 200px;
+  transform: rotate(-90deg);
+}
+
+.sponsor p {
+  margin-top: 68px;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: 900;
+  transform: rotate(180deg);
+}
+
+/* DISTORTION
+=========================== */
+.dist-wrapper {
+  width:100%;
+  position:absolute;
+  display:flex;
+  justify-content: center;
+  bottom:0;
+}
+.distortion {
+  width: 900px;
+  height: 900px;
+  position: absolute;
+  bottom: 0%;
+  border-radius:50px;
+  display:flex;
+  justify-content: center;
+  opacity:0.4;
+}
+.distortion canvas {
+}
+
+.distortion2 {
+  width: 580px;
+  height: 720px;
+  position: absolute;
+  right: 40%;
+  top:5%;
+  border-radius:50px;
+}
+.distortion2 canvas {
+  border-radius:50px;
+  box-shadow:0px 0px 12px rgba(0,0,0,0.1);
+}
+
+/* OVERLAY
+=========================== */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  z-index: 99;
+}
+
+.first {
+  background: #ededed;
+z-index:10;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%233a3a3a' fill-opacity='0.1'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+.second {
+  background: #ededed;
+  left: 50%;
+  z-index:10;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%233a3a3a' fill-opacity='0.1'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+html {
+  cursor: url("data:image/svg+xml,%3Csvg height='6' width='6' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' fill='%23eee' r='4'/%3E%3C/svg%3E") 3 3, auto;
+}
+
+
+.loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: #cecece;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%233a3a3a' fill-opacity='0.1'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+  width: 0%;
+  height: 100%;
+}
+
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+}
